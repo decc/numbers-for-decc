@@ -1,0 +1,124 @@
+<html>
+<title>A feel for DECC's numbers and units</title>
+<style>
+body {
+	margin: 5%;
+}
+a.footnote {
+	vertical-align: super;
+	font-size: 50%;
+}
+a.footnote:before {
+	content: "[";
+}
+a.footnote:after {
+	content: "]";
+}
+h3 {
+	display: inline;
+	font-size: 100%;
+}
+div#notes {
+	font-size: 50%;
+}
+
+#notes h2 {
+	display: inline;
+}
+</style>
+<body>
+	<h1>A feel for <a href='http://decc.gov.uk'>DECC</a>'s numbers and units</h1>
+	<p>The numbers, units and rules of thumb here have been chosen to help give you some help when figures are thrown at you in conversation and written reports. In particular, they should help you to know if a number is 'big', 'small' or 'something that needs a bunch of supporting qualifications to know what it means'. Some of the information below may feel a bit basic to you. By the time you have been at DECC for a couple of years, we hope that it all feels basic.</p>
+	<p>Figures on this sheet are rough approximations to make them easier to remember and do mental arithmetic with. For actual analysis, please use the definitive sources. In particular the <a href="http://www.decc.gov.uk/en/content/cms/statistics/publications/dukes/dukes.aspx">Digest of UK Energy Statistics</a> (DUKES) which is produced in June each year by <a href="mailto:duncan.millard@decc.gsi.gov.uk">Duncan Millard</a> and his team is a goldmine.</p>
+	<p>The document has been prepared by the <a href="mailto:DECC Energy Engineering Team">DECC central engineering team</a>. The master copy is on Matrix at D??/????, which also contains notes and sources. You are reading version 0.0.1, updated on 23 February 2012 by <a href='mailto:tom.counsell@decc.gsi.gov.uk'>Tom Counsell</a>.
+
+	<h2>Prefixes & commas</h2>
+	<p><h3>Prefixes.</h3> 30 MWh means thirty mega-watt-hours. The mega (M) is a standard prefix that means 'add six zeros to the number'. You see it with lots of other units, for instance 10 Mt, meaning 10 mega-tonnes. It has some siblings that you might see:
+	<table>
+		<tr><th>Prefix</th><th>Number of zeros to add to the number</th><th>How scientists pronounce it</th><th>How normal people refer to it</th><th>An example</th></tr>
+		<tr><td>k</td><td>3</td><td>kilo</td><td>thousand</td><td>114 kV means one hundred and fourteen thousand volts.</td></tr>
+		<tr><td>M</td><td>6</td><td>mega</td><td>million</td><td>2 MWh means two million watt-hours of energy.</td></tr>
+		<tr><td>G</td><td>9</td><td>giga</td><td>billion</td><td>1.2 GW means one point two billion watts of power.</td></tr>
+		<tr><td>T</td><td>12</td><td>tera</td><td>thousand billion</td><td>1 TWh means one thosand billion watt-hours of energy.</td></tr>
+		<tr><td>P</td><td>15</td><td>peta</td><td>million billion</td><td>1 PJ means one million billion joules of energy.</td></tr>		
+	</table>		
+	<p>Note that the case matters: M, G, T and P should be upercase, k should be lowercase. A lowercase 'm' actually means a 'thousandth'. There are prefixes for <a href="http://physics.nist.gov/cuu/Units/prefixes.html" title="Definitions of the SI units: The twenty SI prefixes">other numbers of zeros</a>.</p> 
+	<p><h3>Commas.</h3> DUKES uses commas for numbers that are greater than 1000: e.g,: 103,276. These have no meaning and are just to make the number easier to read.</p>
+	<h2>Energy</h2>
+	<p><h3>Joules (J)</h3> are the scientific standard unit of energy is the Joule (J). The unit is rarely used in DECC: A Joule is small (on average, the UK uses 300 billion joules of fuel each second<a href="#300GJ_per_second_note" class='footnote'>1</a>) so is rarely of significance to DECC unless it is given as GJ (billion joules), TJ (thousand billion joules) or PJ (million billion joules). 10 gigajoules (GJ) are 10 billion joules and equivalent to just under 3 MWh<a href="#10GJto3MWhNote" class='footnote'>2</a>.</p>
+	
+	<p><h3>Watt-hours (Wh)</h3> are the unit in which electricity is reported, and a good unit for most types of energy. If you don't know what unit to choose, choose it. A terawatt-hour (TWh) is 1000 gigawatt-hours (GWh) which is 1000 megawatt-hours (MWh) which is 1000 kilowatt-hours (kWh) which is 1000 watt-hours (Wh). A 'unit' of electricity, as reported on a household bill, is a kWh.</p> 
+	
+	<p><h3>Tonnes of oil equivalent (toe)</h3> are the unit used for overal energy supply and demand in DECC's national statistics, together with their multiples (ktoe for thousand tonnes, Mtoe for million tonnes). 2 toe are equivlanet to about 3 MWh.</p>
+	
+	<p><h3>Barrels of oil equivalent (boe)</h3> are the unit of the oil industry. In particular oil production is often reported in barrels per day (bpd)
+	
+	<p><h3>Cubic meters of gas</h3> Gas is sometimes reported in cubic meters (?). A cubic meter of gas is about X MWh. A typical household uses X MWh of gas a year, which is about X m3.</p>
+	
+	<p><h3>Gross and net calorific value</h3> You may sometimes see reference to Gross Calorific Value (GCV, archaically called Higher Heating Value or HHV) which are contrasted with Net Calorific Value (NCV, archaically called Lower Heating Value or LHV). Gross energy is typically X% higher than Net. The differene is technical. Unless you know otherwise, it is best to use Gross Values (as DUKES, and this note, does.)</p>
+	
+	<p><h3>The 'home'</h3> is an often reported, but tiny unit of energy. Usually it means just the electricity used in a home, which is about 3&ndash;4 MWh, and ignores the gas used in a home (about 10 MWh) and all the energy used outside the home. Total UK energy demand is equivalent to perhaps a billion 'homes', as usually reported.</p>
+	
+	<p><h3>per year.</h3> Sometimes figures will be explicitly reported as per year (e.g., 50 TWh/yr). If a timer period isn't mentioned, then it is usually safe to assume that the energy was meant to be 'per year' with the exception of when stores of energy are being discussed, when it just means an amount of energy (e.g., Dinorwig, the largest electricity storage facility in the UK, stores 9.1 GWh). Maximum confusion occurs when Dinnorwig
+	
+	<p><h3>Big numbers, small numbers</h3> Energy numbers above 10 TWh are significant at a national level. UK primary energy demand is about 3000 TWh (X Coal, X Oil, X Gas, X Nuclear, X Renewables). That is the measure of the energy that flows into the economy. UK final energy demand is about 2000 TWh (Coal, Oil, Gas, Electricity, split between X MWh. That is the measure of the energy that flows into industry, homes, vehicles and businesses. The difference is lost in converting the energy from one form to the other and transporting it. See efficiency, below.A typical 25 mpg car, travelling a typical 10,000 miles a year, will use about X MWh of energy, which is about X tonnes of oil equivalent. Drax, our largest power station, produces 25 TWh a year. </p>
+	
+	<h2>Efficiency</h2>
+	
+	Efficiencies are normally calculated by dividing the useful energy out divided by the energy in the 'fuel' used. It is important to know whether the efficiency is on a Gross or Net Calorific Value basis (a good household condensing boiler is X% efficienct on a net basis, but only Y% efficient on a gross basis). Efficiencies can be greater than 100% – heat pumps can give up to 4 kWh of useful energy for each kWh of electricity used, because they extract the missing 3 kWh from the air. There are fundamental limits to some efficiencies, for instance the 'combined cycle' of a modern gas-fired power electricity power station cannot be more than 60% efficient (the best power stations have an efficiency close to this at X%). The 40% of energy that is 'wasted' is usually a large volume of heat that is too cold to be useful. In general, a kWh of electricity is more 'useful' than a kWh of heat, a kWh of electricity can be turned into at least a kWh (and perhaps up to 4 kWh) of heat while a kWh of heat can only be turned into 0.6 kWh of electricity. Similarly, a small amount of a hot substance is more useful than a large amount of a warm substance, even if they have the same energy, because you can turn the hot into cold but not vice versa.
+	
+	The electricity grid is 95% efficient. The gas grid is X% efficient. District heating networks can be X% efficient. Our best CCGT station is probably X% efficient. Our worst old oil fired power station is probably X% efficient. Petrol cars are 25% efficient. Batteries are 98% efficient, electric motors ar 97% efficient. Bad old gas boilers and woodchip boilers are perhaps X% efficient. Modern condensing gas boilers are X% efficient. Heat pumps are between X% and Y% efficient.
+
+	Combined Heat and Power systems count both heat and electricity as useful energy out, and therefore have higher reported efficiencies than electriicty only generation. The key requirement for this to be true is that the heat has to be truly useful and not wasted. The higher the temperature of the heat required, the lower will be the efficiency of the electricity generation.
+
+	<h2>Power</h2>
+	Power is the rate at which we use or produce energy. We almost always report the maximum rate, and we almost always report it in watts. 1 Watt is 1 Joule per second. Over a year, 1 GW of nuclear power and 1000 3MW wind turbines would probalby produce the same amount of energy, but on windy days the wind turbines would produce it at 3 times the rate of the nuclear power station and on calm days, they would produce almost none. 1 GW of nuclear power and a million 10 kW roof top solar installation would also produce the same amount of energy over a year, but the solar would produce ten times as much at midday on a sunny day and none at night. 
+	
+	The maximum power used by the UK is probably about 300 GW (100 GW Gas, X GW of Electricty, X GW of Coal, X GW of oil products) which occurs on cold winter evenings.
+	The minimum power used by the UK is probably about 50 GW (100 GW Gas, X GW of electricity, X GW of Coal, X GW of oil products ) which occurs on mild summer nights.
+	The average power used by the UK is probably about X GW (), which almost never occurs.
+	
+	1 kW of power, running for a whole year would use 10 MWh of energy, 1 MW of power, running for a whole year, would use 10 GWh or energy, 1 GW of power, running for a whole year, would use 10 TWh of energy.
+	
+	1 x 1 GW muclear power station s= 1 GW nuclear power station x 10 = 10 TWh x operation 90% of the time = 9 TWh of annual energy
+	1000 x 3 MW wind turbines = 3 GW of peak power x 10 = 30 TWh x operating 30% of the time = 10 TWh of annual energy
+	1000000 x 10 kW solar panels = 10 GW of peak power x 10 = 100 TWh x operating 10% of the time = 10 TWh of annual energy.
+	
+	Sizewell B has a peak power output of 1 GW; A single 747 jet engine has a peak power output of X MW; a large wind turbine has a peak output of X MW; a car has a peak power output of 
+	The largest electricity pylons can carry X GW, a kettle demands a peak of 2.2 kW. The largest gas pipes carry X GW, a typical home boiler might demand a peak of 30 kW.
+	
+	<h2>Area</h2>
+	Energy from Wind, Solar, Wave and Bio-energy is limited by the area of land we can cover. 
+	
+	<h2>Emissions</h2>
+	Nationally, greenhouse gases are reported in million tonnes of Carbon Dioxide equivalent (MtCO2e), where equivalence is calculated . The cost of carbon is reported in pounds per tonne equivlent (&pound;/tCO2e). 
+	
+	It is important to note whether a figure is given on tonnes of Carbon Dioxide or Carbon Dioxide equivelent. Emissions of CO2e are X% higher than emissions of CO2.
+	
+	In 1990 the UK emitted about 700 Million tonnes of carbon dioxide, which is 1
+	
+	<h2>Prices</h2>
+	
+	 (e.g., you pay 14p/kWh for electricity, 4p/kWh for gas<a href="#residential_unit_prices_note" class='footnote'>3</a>). Wholesale electricity prices are reported in MWh (e.g., the average wholesale price of electricity in 2011 was about &pound;60/MWh<a href="#wholesale_electricity_cost_note" class='footnote'>4</a>). To get from &pound;/MWh to p/kWh you divide by ten (e.g., &pound;100/MWh is 10p/kWh). To get the price a consumer might pay, you need to approximately double this to get to electricity bills.
+	
+	Wholesale electricity prices are given in pounds per megawatt-hour (&pound;/MWh), gas prices in p/mm3 and oil prices in $/barrel. Sometimes prices are given in &pound;/GJ. They are rarely converted to their equivalent values.
+	The Renewable Obligation Certificate (ROC) is intentended to have a value of &pound;44/MWh. The cost of carbon is &pound;X/tCO2. 
+	
+	The 'levelised cost' of a technology is the electricity price at which we believe that the technology would break even. These range from X MWh for X, through. By contrast the electricity price .
+	
+	Sometimes, costs are given per unit of peak power, such as &pound;/kW of &pound;M/GW. These range from &pound;X/kW for a cheap gas power station, through blah and blah. There is no easy way to convert &pound;/kW to &pound;/MWh, because the translation depends on the cost of fuel, the proportion of the time that the plant is running and the cost of borrowing for the plant.
+	
+	In total, the UK spends X bn on fuel (about &pound;/person per year) and perhaps X bn (about &pound;/person) on energy using and saving equipent (cars, cookers, insulation). Only &pound;/person is spent through household gas and electricity bills. The remainder is spent on transport fuel bills, by business and by industry.
+
+<div id='notes'>	
+<h1>Notes</h1>
+
+<p><h2 id='300GJ_per_second_note'>[1] On average, the UK uses 300 billion joules of fuel each second.</h2> DUKES 2011, reports 2010 UK primary demand as 227525 thousand barrels of oil equivalent in table 1.1. This is equivalent to 2646 TWh, which is equivalent to 302 GW running continuously for a year, which is equivalent to 302 billion joules per second.</p>
+
+<p><h2 id='10GJto3MWhNote'>[2] 10 GJ is just under 3 MWh</h2> 1 MWh is 1 megawatt running for 1 hour. 1 megawatt is 1 million joules per second. Therefore 1 megawatt hour is 1 million joules per second x 60 seconds x 60 minutes = 3.6 billion joules. Therfore 3 MWh is 3 x 3.6 = 10.8 billion joules. More precisely, 10 GJ is (10/3.6) = 2.78 MWh.</p>
+
+<p><h2 id='residential_unit_prices_note'>[3] You pay 14p/kWh for electricity, 4p/kWh for gas.</h2> <a href="http://www.decc.gov.uk/en/content/cms/statistics/publications/prices/prices.aspx">The December 2011 Quarterly Energy Prices table 2.2.3</a> gives the price per kWh of electricity as varying over the range 11.67p/kWh (the lowest value was in Leeds for a direct debit arrangement) to 17.06p/kWh (the highest value was in Aberdeen for electricity supplied on credit). For gas, table 2.3.3 gives the price per kWh as varying over the range 3.57p/kWh (the lowest value was in Aberdeen, for a direct debit arrangement) to 4.62 p/kWh (the highest value was in Ipswich, for gas supplied on credit).</p>
+
+<p><h2 id='wholesale_electricity_cost_note'>[4] The average wholesale price of electricity in 2011 was about &pound;60/MWh</h2>.<a href="http://www.ofgem.gov.uk/Markets/RetMkts/rmr/smr/Documents1/SMR_Dec_2011.pdf" title=""> The Ofgem December 2011 Electricity and Gas Supply Market Report</a> gives a typical wholesale electricity price of &pound;60/MWh in 2011, based on an 18 month hedging strategy.
+	
+http://www.draxpower.com/files/page/72/Prelims_FINAL11.pdf 26.4 TWh in 2011 at a load factor of 80%. Load factor is a combination of whether it is economic to run, together with whether it is available to run (availabilithy factor). Availability to run is a combination of scheduled maintenance and unexpected shutdowns.
